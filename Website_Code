@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Tutorial Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // JavaScript function to navigate to the home section
+        function navigateToHome() {
+            document.getElementById("home").style.display = "block";
+            document.getElementById("tools").style.display = "none";
+            hideAllToolContent();
+        }
+
+        // JavaScript function to display DevOps tools when the Tutorials link is clicked
+        function displayDevOpsTools() {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("tools").style.display = "block";
+            hideAllToolContent();
+        }
+
+        // JavaScript function to display content for the selected DevOps tool
+        function displayToolContent(toolId) {
+            navigateToHome(); // Hide other content first
+            document.getElementById(toolId).style.display = "block";
+        }
+
+        // Helper function to hide content of all DevOps tools
+        function hideAllToolContent() {
+            var tools = document.getElementsByClassName("tool-content");
+            for (var i = 0; i < tools.length; i++) {
+                tools[i].style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>DevOps Tutorial Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="navigateToHome();">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="displayDevOpsTools();">Tutorials</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Welcome to our DevOps Tutorial Website!</h2>
+        <p>Explore our tutorials to learn about various DevOps tools and practices.</p>
+        <p>Stay tuned for more updates!</p>
+    </section>
+    <section id="tools" style="display: none;">
+        <h2>DevOps Tools</h2>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('linuxContent');">Linux</a></li>
+			<li><a href="javascript:void(0);" onclick="displayToolContent('gitContent');">Git</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('jenkinsContent');">Jenkins</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('dockerContent');">Docker</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('ansibleContent');">Ansible</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('terraformContent');">Terraform</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('mavenContent');">Maven</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('tomcatContent');">Tomcat</a></li>
+            <li><a href="javascript:void(0);" onclick="displayToolContent('monitoringContent');">Monitoring Tools</a></li>
+        </ul>
+    </section>
+    <!-- Content sections for each DevOps tool -->
+	<section id="linuxContent" class="tool-content" style="display: none;">
+        <h2>Linux Tutorial</h2>
+        <!-- Add Linux tutorial content here -->
+    <section id="gitContent" class="tool-content" style="display: none;">
+        <h2>Git Tutorial</h2>
+        <!-- Add Git tutorial content here -->
+    </section>
+    <section id="jenkinsContent" class="tool-content" style="display: none;">
+        <h2>Jenkins Tutorial</h2>
+        <!-- Add Jenkins tutorial content here -->
+    </section>
+    <section id="dockerContent" class="tool-content" style="display: none;">
+        <h2>Docker Tutorial</h2>
+        <!-- Add Docker tutorial content here -->
+    </section>
+    <section id="ansibleContent" class="tool-content" style="display: none;">
+        <h2>Ansible Tutorial</h2>
+        <!-- Add Ansible tutorial content here -->
+    </section>
+    <section id="terraformContent" class="tool-content" style="display: none;">
+        <h2>Terraform Tutorial</h2>
+        <!-- Add Terraform tutorial content here -->
+    </section>
+    <section id="mavenContent" class="tool-content" style="display: none;">
+        <h2>Maven Tutorial</h2>
+        <!-- Add Maven tutorial content here -->
+    </section>
+    <section id="tomcatContent" class="tool-content" style="display: none;">
+        <h2>Tomcat Tutorial</h2>
+       
