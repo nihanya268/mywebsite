@@ -111,33 +111,58 @@
         </ul>
     </section>
     <!-- Content sections for each DevOps tool -->
-	<section id="linuxContent" class="tool-content" style="display: none;">
-        <h2>Linux Tutorial</h2>
-        <!-- Add Linux tutorial content here -->
-    <section id="gitContent" class="tool-content" style="display: none;">
-        <h2>Git Tutorial</h2>
-        <!-- Add Git tutorial content here -->
-    </section>
-    <section id="jenkinsContent" class="tool-content" style="display: none;">
-        <h2>Jenkins Tutorial</h2>
-        <!-- Add Jenkins tutorial content here -->
-    </section>
-    <section id="dockerContent" class="tool-content" style="display: none;">
-        <h2>Docker Tutorial</h2>
-        <!-- Add Docker tutorial content here -->
-    </section>
-    <section id="ansibleContent" class="tool-content" style="display: none;">
-        <h2>Ansible Tutorial</h2>
-        <!-- Add Ansible tutorial content here -->
-    </section>
-    <section id="terraformContent" class="tool-content" style="display: none;">
-        <h2>Terraform Tutorial</h2>
-        <!-- Add Terraform tutorial content here -->
-    </section>
-    <section id="mavenContent" class="tool-content" style="display: none;">
-        <h2>Maven Tutorial</h2>
-        <!-- Add Maven tutorial content here -->
-    </section>
-    <section id="tomcatContent" class="tool-content" style="display: none;">
-        <h2>Tomcat Tutorial</h2>
-       
+<section id="linuxContent" class="tool-content" style="display: none;">
+    <h2>Linux Tutorial</h2>
+    <!-- Add Linux tutorial content here -->
+</section> <!-- Add closing tag here -->
+
+<section id="gitContent" class="tool-content" style="display: none;">
+    <h2>Git Tutorial</h2>
+    <!-- Add Git tutorial content here -->
+</section> <!-- Add closing tag here -->
+
+<section id="jenkinsContent" class="tool-content" style="display: none;">
+    <h2>Jenkins Tutorial</h2>
+    <!-- Add Jenkins tutorial content here -->
+</section>
+
+<section id="dockerContent" class="tool-content" style="display: none;">
+    <h2>Docker Tutorial</h2>
+    <!-- Add Docker tutorial content here -->
+</section>
+
+<section id="ansibleContent" class="tool-content" style="display: none;">
+    <h2>Ansible Tutorial</h2>
+    <!-- Add Ansible tutorial content here -->
+</section>
+
+<section id="terraformContent" class="tool-content">
+    <h2>Terraform Tutorial</h2>
+    <p>Introduction to Terraform and IaC</p>
+    <p>In this session, we'll introduce you to the fundamental concepts of Terraform and Infrastructure as Code (IaC). Learn why Terraform is crucial for managing infrastructure and how IaC streamlines provisioning.</p>
+    <p>Installing Terraform on MacOS, Linux and Windows</p>
+    <p>Get your hands dirty by installing Terraform on both MacOS, Linux, and Windows. We'll guide you through the process with clear instructions and commands.</p>
+    <p>Setting up Terraform for AWS</p>
+    <p>Dive into AWS integration with Terraform. You'll learn how to set up your AWS credentials and configure the AWS provider within Terraform to start provisioning resources.</p>
+    <p>Writing Your First Terraform Code</p>
+    <p>Start writing actual Terraform code with a simple example. Learn about the basic structure of a Terraform configuration file and how to define resources using the HCL language.</p>
+    <p>Terraform Lifecycle</p>
+    <p>Understand the lifecycle of terraform. What is terraform init, plan, and apply.</p>
+</section>
+
+<section id="mavenContent" class="tool-content" style="display: none;">
+    <h2>Maven Tutorial</h2>
+    <!-- Add Maven tutorial content here -->
+</section>
+
+<section id="tomcatContent" class="tool-content" style="display: none;">
+    <h2>Tomcat Tutorial</h2>
+    <!-- Add Tomcat tutorial content here -->
+</section>
+
+<footer>
+    <!-- Footer content goes here -->
+</footer>
+
+</body>
+</html>
